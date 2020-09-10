@@ -189,7 +189,7 @@ class Game{
 		list.forEach(function(item){
 			game.sfx[item] = new SFX({
 				context: game.sfx.context,
-				src:{mp3:`${game.assetsPath}sfx/${item}.mp3`, ogg:`${game.assetsPath}sfx/${item}.ogg`},
+				src: `vr_game`/{mp3:`${game.assetsPath}sfx/${item}.mp3`, ogg:`${game.assetsPath}sfx/${item}.ogg`},
 				loop: (item=='factory' || item=='fan'),
 				autoplay: (item=='factory'|| item=='fan'),
 				volume: 0.3
